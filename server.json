@@ -1,7 +1,7 @@
 {
     "bootstrap" : false,
     "server" : true,
-    "datacenter" : "aws-tutorial-series",
+    "datacenter" : "jpe1",
     "data_dir" : "/tmp/consul",
     "encrypt" : "__ENCRYPT__",
     "log_level" : "INFO",
