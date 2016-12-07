@@ -1,5 +1,5 @@
 # Consul Demo
-Consul service discovery tool examples. 
+Consul service discovery tool examples.
 
 ```
 # Run these on all consul servers.
@@ -24,7 +24,7 @@ cd /root/consul_demo
 cp bootstrap.json config.json
 
 # Save this keygen! Note, if your key has a slash in it you need to escape them for setup.sh. Or just regenerate one until it doesn't have a slash :)
-consul keygen 
+consul keygen
 ```
 
 ```
@@ -43,7 +43,7 @@ cp agent.json config.json
 ```
 
 ```
-./setup.sh HOSTNAME ENCRYPT_KEY IP_OF_BOOTSTRAP IP_NON_BOOTSTRAP
+./setup.sh HOSTNAME ENCRYPT_KEY IP_OF_BOOTSTRAP IP_NON_BOOTSTRAP IP_NON_BOOTSTRAP
 nohup consul agent -config-dir /root/consul_demo/config.json &
 
 # Now lets test on our agent server.
