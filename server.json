@@ -1,7 +1,7 @@
 {
     "bootstrap" : false,
     "server" : true,
-    "datacenter" : "jpe1",
+    "datacenter" : "jpe2",
     "data_dir" : "/tmp/consul",
     "encrypt" : "__ENCRYPT__",
     "log_level" : "INFO",
@@ -10,21 +10,21 @@
     "node_name": "__NODE_NAME__",
     "checks": [
         {
-            "id" : "check_cpu_utilization",
+            "id" : "x_check_cpu_utilization",
             "notes" : "Greater than 50% warn, greater than 75% fail.",
             "name" : "CPU Utilization",
             "script" : "/root/consul_demo/scripts/cpu_utilization.sh",
             "interval" : "10s"
         },
         {
-          "id" : "check_mem_utilization",
+          "id" : "x_check_mem_utilization",
           "notes" : "Greater than 50% warn, greater than 75% fail.",
           "name" : "MEM Utilization",
           "script" : "/root/consul_demo/scripts/mem_utilization.sh",
           "interval" : "10s"
         },
         {
-          "id" : "check_hdd_utilization",
+          "id" : "x_check_hdd_utilization",
           "notes" : "Greater than 50% warn, greater than 75% fail.",
           "name" : "HDD Utilization",
           "script" : "/root/consul_demo/scripts/hdd_utilization.sh",
